@@ -1,6 +1,6 @@
 @echo off
-REM LLVM 5 MSBuild 15 Integration
-REM Arves100 , 07-11-2017, Uol-NCSA License
+REM LLVM 4.0 and above MSBuild 15 Integration
+REM Arves100, 03-27-2018, Uol-NCSA License
 
 set VS_REGVAL=15.0
 
@@ -31,10 +31,10 @@ if not "%PROCESSOR_ARCHITECTURE%"=="AMD64" goto done
 :install_x64
 if not exist "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017" (mkdir "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017")
 if not exist "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017_xp" (mkdir "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017_xp")
-copy Toolset-llvm-vs2017-x64.props "%VS_PROOT_DIR%\Win32\PlatformToolsets\LLVM-vs2017\Toolset.props"
-copy Toolset-llvm-vs2017-x64.targets "%VS_PROOT_DIR%\Win32\PlatformToolsets\LLVM-vs2017\Toolset.targets"
-copy Toolset-llvm-vs2017-xp-x64.props "%VS_PROOT_DIR%\Win32\PlatformToolsets\LLVM-vs2017_xp\Toolset.props"
-copy Toolset-llvm-vs2017-xp-x64.targets "%VS_PROOT_DIR%\Win32\PlatformToolsets\LLVM-vs2017_xp\Toolset.targets"
+copy Toolset-llvm-vs2017-x64.props "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017\Toolset.props"
+copy Toolset-llvm-vs2017-x64.targets "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017\Toolset.targets"
+copy Toolset-llvm-vs2017-xp-x64.props "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017_xp\Toolset.props"
+copy Toolset-llvm-vs2017-xp-x64.targets "%VS_PROOT_DIR%\x64\PlatformToolsets\LLVM-vs2017_xp\Toolset.targets"
 goto done
 
 :done
