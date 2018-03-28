@@ -1,6 +1,6 @@
 @echo off
-REM LLVM 5 MSBuild 15 Integration
-REM Arves100 , 07-11-2017, Uol-NCSA License
+REM LLVM 4.0 and above MSBuild 15 Integration
+REM Arves100, 03-27-2018, Uol-NCSA License
 
 set VS_REGVAL=15.0
 
