@@ -1,8 +1,8 @@
 University of Illinois/NCSA Open Source License 
 
-Copyright (c) 2017 Arves100. All rights reserved.
+Copyright (c) 2017-2018 Arves100 and contributors. All rights reserved.
 
-Developed by: Arves100
+Developed by: Arves100 and contributors
 
 Permission is hereby granted, free of charge, to any person 
 obtaining a copy of this software and associated documentation files 
