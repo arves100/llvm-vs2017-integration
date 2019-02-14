@@ -52,7 +52,8 @@
   <Import Project="$(_PlatformFolder)Platform.Common.props" />
   
   <PropertyGroup>
-    <LLVMInstallDir>$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\LLVM\LLVM)</LLVMInstallDir>
+    <LLVMInstallDir>$(LLVM_ROOT)</LLVMInstallDir>
+    <LLVMInstallDir Condition="'$(LLVMInstallDir)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\LLVM\LLVM)</LLVMInstallDir>
     <LLVMInstallDir Condition="'$(LLVMInstallDir)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\LLVM\LLVM)</LLVMInstallDir>
     <ExecutablePath>$(LLVMInstallDir)\bin;$(ExecutablePath)</ExecutablePath>
 	<IncludePath>$(LLVMInstallDir)\lib\clang\7.0.0\include;$(IncludePath)</IncludePath>
