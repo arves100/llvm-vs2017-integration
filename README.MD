@@ -12,6 +12,7 @@ Simply fork the branch related to your version
 | 5.0.0        | v5.0   |
 | 6.0.0        | v6.0   |
 | 7.0.0        | v7.0   |
+| 8.0.0        | v8.0   |
 
 ### Automatic Installation 
 
