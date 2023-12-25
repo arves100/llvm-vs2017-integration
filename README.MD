@@ -1,5 +1,7 @@
 # LLVM Visual Studio 2017 Integration
 
+**NOTE:** This repository is no longer active as Microsoft even have an updated integration now for the current versions of Visual Studio. Please look at any of the forks around if you still wish to use this or be aware that there is no support under this code.
+
 This repository contains Visual Studio 2017 integration for various LLVM versions.
 
 Pull requests for new versions are welcome, just create a branch and adjust the configuration.
